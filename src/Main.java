@@ -1,60 +1,29 @@
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+import InterfaceSample.Developer;
+import InterfaceSample.Manager;
+import PolimorfismSample.CheckingAccount;
+import PolimorfismSample.SavingAccount;
+
+
 public class Main {
     public static void main(String[] args) {
+        Developer dv =new Developer(1,"cansu savcı",5000,"back-end","programmer");
+        Manager manager =new Manager(1,"cansu savcı",2000,"development",20);
 
-        /*Scanner scanner = new Scanner(System.in);
+        System.out.println("Develeoper promotion:"+dv.calculateBonus());
+        System.out.println("manager promotion:"+manager.calculateBonus());
 
-        int pin = 1234;
-        int balance = 3000;
+        System.out.println("-*-*-*-*-*-*-*-*-*-*");
+        SavingAccount sv =new SavingAccount("cansu savcı",4000);
+        CheckingAccount cv=new CheckingAccount("cansu savcı",6000);
 
-        //pin doğrulama
-        System.out.println("pin kodunu giriniz");
-        int girilenPin = scanner.nextInt();
-        if (girilenPin != pin) {
-            System.out.println("Pin kodu hatalı");
-            return;
-        }
-        System.out.println("giriş başarılı");
-        while(true) {
-            System.out.println("ATM menü");
-            System.out.println("1.Bakiye görüntüleme");
-            System.out.println("2.Para çek");
-            System.out.println("3.para yatır");
-            System.out.println("Seçiminizi yapınız");
-
-            int secenek = scanner.nextInt();
-
-            if (secenek == 1) {
-                System.out.println("mevcut bakiyeniz" + balance + "Tl");
-
-            } else if (secenek == 2) {
-                System.out.println("yatırmak istediğiniz tutarı seçiniz");
-                int amount = scanner.nextInt();
-                if (amount > 0) {
-                    balance += amount;
-                    System.out.println(amount + "Tl başarıyla yatırıldı");
-                } else {
-                    System.out.println("geçersiz tutar");
-
-                }
-            } else if (secenek == 3) {
-                System.out.println("çekmek istediğiniz tutarı giriniz");
-                int cekilicek = scanner.nextInt();
-                if (cekilicek > 0 && cekilicek <= balance) {
-                    balance -= cekilicek;
-                    System.out.println(cekilicek + "Tl başarıyla çekildi");
-
-                } else {
-                    System.out.println("yatersiz bakiye veya geçersiz tutar");
-
-                }
+        sv.CalculateInterest();
+        cv.CalculateInterest();
 
 
-            }
 
 
-        }*/
+
+
     }
 
 
