@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+<<<<<<< HEAD
       <module fileurl="file://$PROJECT_DIR$/Intro.iml" filepath="$PROJECT_DIR$/Intro.iml" />
+=======
+      <module fileurl="file://$PROJECT_DIR$/dort.iml" filepath="$PROJECT_DIR$/dort.iml" />
+>>>>>>> 80ae217 (4.ödev mart 1. haftaeklnedi)
     </modules>
   </component>
 </project>
